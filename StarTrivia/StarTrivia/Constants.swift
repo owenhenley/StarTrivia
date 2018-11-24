@@ -8,4 +8,8 @@
 
 import UIKit
 
-let BLACK_BG = UIColor.black.withAlphaComponent(0.5).cgColor
+let BLACK_BG   = UIColor.black.withAlphaComponent(0.5).cgColor
+let BASE_URL   = "https://swapi.co/api/"
+let PERSON_URL = BASE_URL + "people/"
+
+typealias PersonResponseConpletion = (Person?) -> Void

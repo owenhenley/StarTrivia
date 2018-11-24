@@ -15,6 +15,8 @@
 		3EF1E8F421A9C0DD00EA5B5B /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F121A9C0C400EA5B5B /* Starjedi.ttf */; };
 		3EF1E8F521A9C0E000EA5B5B /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F321A9C0C400EA5B5B /* Starjhol.ttf */; };
 		3EF1E8F621A9C0E400EA5B5B /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F221A9C0C400EA5B5B /* Starjout.ttf */; };
+		3EF1E8F921A9C52600EA5B5B /* BlackBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F821A9C52600EA5B5B /* BlackBackgroundView.swift */; };
+		3EF1E8FC21A9C5A800EA5B5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1E8FB21A9C5A800EA5B5B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		3EF1E8F121A9C0C400EA5B5B /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		3EF1E8F221A9C0C400EA5B5B /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 		3EF1E8F321A9C0C400EA5B5B /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		3EF1E8F821A9C52600EA5B5B /* BlackBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBackgroundView.swift; sourceTree = "<group>"; };
+		3EF1E8FB21A9C5A800EA5B5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 			children = (
 				3E13F39421A9119E00D5F3EE /* LaunchScreen.storyboard */,
 				3E13F38C21A9119D00D5F3EE /* Main.storyboard */,
+				3EF1E8F821A9C52600EA5B5B /* BlackBackgroundView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 		3E13F38F21A9119D00D5F3EE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3EF1E8FA21A9C59900EA5B5B /* Utilities */,
 				3E13F39721A9119E00D5F3EE /* Info.plist */,
 				3EF1E8F721A9C0EA00EA5B5B /* Fonts */,
 				3E13F39221A9119E00D5F3EE /* Assets.xcassets */,
@@ -127,6 +133,14 @@
 				3EF1E8F221A9C0C400EA5B5B /* Starjout.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		3EF1E8FA21A9C59900EA5B5B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3EF1E8FB21A9C5A800EA5B5B /* Constants.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +218,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E13F39121A9119D00D5F3EE /* AppDelegate.swift in Sources */,
+				3EF1E8F921A9C52600EA5B5B /* BlackBackgroundView.swift in Sources */,
 				3E13F39E21A9121800D5F3EE /* SelectPersonVC.swift in Sources */,
+				3EF1E8FC21A9C5A800EA5B5B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

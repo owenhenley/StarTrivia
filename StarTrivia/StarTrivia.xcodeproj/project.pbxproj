@@ -12,6 +12,9 @@
 		3E13F39321A9119E00D5F3EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E13F39221A9119E00D5F3EE /* Assets.xcassets */; };
 		3E13F39621A9119E00D5F3EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E13F39421A9119E00D5F3EE /* LaunchScreen.storyboard */; };
 		3E13F39E21A9121800D5F3EE /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E13F39D21A9121800D5F3EE /* SelectPersonVC.swift */; };
+		3EF1E8F421A9C0DD00EA5B5B /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F121A9C0C400EA5B5B /* Starjedi.ttf */; };
+		3EF1E8F521A9C0E000EA5B5B /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F321A9C0C400EA5B5B /* Starjhol.ttf */; };
+		3EF1E8F621A9C0E400EA5B5B /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F221A9C0C400EA5B5B /* Starjout.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		3E13F39521A9119E00D5F3EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E13F39721A9119E00D5F3EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E13F39D21A9121800D5F3EE /* SelectPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPersonVC.swift; sourceTree = "<group>"; };
+		3EF1E8F121A9C0C400EA5B5B /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		3EF1E8F221A9C0C400EA5B5B /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
+		3EF1E8F321A9C0C400EA5B5B /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +60,6 @@
 		3E13F38021A9119D00D5F3EE /* StarTrivia */ = {
 			isa = PBXGroup;
 			children = (
-				3E13F39721A9119E00D5F3EE /* Info.plist */,
 				3E13F38121A9119D00D5F3EE /* Models */,
 				3E13F38421A9119D00D5F3EE /* Controllers */,
 				3E13F38B21A9119D00D5F3EE /* Views */,
@@ -106,10 +111,22 @@
 		3E13F38F21A9119D00D5F3EE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3E13F39721A9119E00D5F3EE /* Info.plist */,
+				3EF1E8F721A9C0EA00EA5B5B /* Fonts */,
 				3E13F39221A9119E00D5F3EE /* Assets.xcassets */,
 				3E13F39021A9119D00D5F3EE /* AppDelegate.swift */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		3EF1E8F721A9C0EA00EA5B5B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3EF1E8F121A9C0C400EA5B5B /* Starjedi.ttf */,
+				3EF1E8F321A9C0C400EA5B5B /* Starjhol.ttf */,
+				3EF1E8F221A9C0C400EA5B5B /* Starjout.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +189,9 @@
 			files = (
 				3E13F39621A9119E00D5F3EE /* LaunchScreen.storyboard in Resources */,
 				3E13F38E21A9119D00D5F3EE /* Main.storyboard in Resources */,
+				3EF1E8F421A9C0DD00EA5B5B /* Starjedi.ttf in Resources */,
+				3EF1E8F521A9C0E000EA5B5B /* Starjhol.ttf in Resources */,
+				3EF1E8F621A9C0E400EA5B5B /* Starjout.ttf in Resources */,
 				3E13F39321A9119E00D5F3EE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

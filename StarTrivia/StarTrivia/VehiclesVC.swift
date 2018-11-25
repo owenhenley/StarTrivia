@@ -26,22 +26,28 @@ class VehiclesVC: UIViewController, SelectPersonDelegate {
     var person: Person!
     let api = VehicleAPI()
     var vehicles = [String]()
+    var currentVehicle = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         vehicles = person.vehicleUrls
-        guard let firstVehicle = vehicles.first else { return }
-        getVehicle(url: firstVehicle)
+        previousButton.isEnabled = false
+        nextButton.isEnabled = vehicles.count > 1
+        
+        guard let vehicle = vehicles.first else { return }
+        getVehicle(url: vehicle)
     }
     
         // MARK: - Actions
     
     @IBAction func previousTapped(_ sender: Any) {
-        
+        currentVehicle -= 1
+        setButtonState()
     }
     
     @IBAction func nextTapped(_ sender: Any) {
-        
+        currentVehicle += 1
+        setButtonState()
     }
 
     func getVehicle(url: String) {
@@ -54,14 +60,36 @@ class VehiclesVC: UIViewController, SelectPersonDelegate {
         }
     }
     
+    func setButtonState() {
+        
+        previousButton.isEnabled = currentVehicle == 0 ? false : true
+        nextButton.isEnabled = currentVehicle == vehicles.count - 1 ? false : true
+
+        getVehicle(url: vehicles[currentVehicle])
+        
+   //---------------------------------------------------------------------------------------------------------//
+        
+        // if currentVehicle == 0 {
+        //     previousButton.isEnabled = false
+        // } else {
+        //     previousButton.isEnabled = true
+        // }
+        //
+        // if currentVehicle == vehicles.count - 1 {
+        //     nextButton.isEnabled = false
+        // } else {
+        //     nextButton.isEnabled = true
+        // }
+    }
+    
     func setupLabels(vehicle: Vehicle) {
-        nameLabel.text = vehicle.name
-        modelLabel.text = vehicle.model
+        nameLabel.text         = vehicle.name
+        modelLabel.text        = vehicle.model
         manufacturerLabel.text = vehicle.manufacturer
-        costLabel.text = vehicle.cost
-        lengthLabel.text = vehicle.length
-        speedLabel.text = vehicle.speed
-        crewLabel.text = vehicle.crew
-        passengerLabel.text = vehicle.passengers
+        costLabel.text         = vehicle.cost
+        lengthLabel.text       = vehicle.length
+        speedLabel.text        = vehicle.speed
+        crewLabel.text         = vehicle.crew
+        passengerLabel.text    = vehicle.passengers
     }
 }

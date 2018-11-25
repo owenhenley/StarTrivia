@@ -17,6 +17,8 @@
 		3E7C321B21AA468000ACC457 /* HomeworldAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C321A21AA468000ACC457 /* HomeworldAPI.swift */; };
 		3E7C321D21AA508A00ACC457 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C321C21AA508A00ACC457 /* Vehicle.swift */; };
 		3E7C321F21AA517E00ACC457 /* VehicleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C321E21AA517E00ACC457 /* VehicleAPI.swift */; };
+		3EA7880921AB0CF600B2BCF5 /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA7880821AB0CF600B2BCF5 /* Starship.swift */; };
+		3EA7880B21AB0D5000B2BCF5 /* StarshipAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA7880A21AB0D5000B2BCF5 /* StarshipAPI.swift */; };
 		3EF1E8F421A9C0DD00EA5B5B /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F121A9C0C400EA5B5B /* Starjedi.ttf */; };
 		3EF1E8F521A9C0E000EA5B5B /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F321A9C0C400EA5B5B /* Starjhol.ttf */; };
 		3EF1E8F621A9C0E400EA5B5B /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F221A9C0C400EA5B5B /* Starjout.ttf */; };
@@ -44,6 +46,8 @@
 		3E7C321A21AA468000ACC457 /* HomeworldAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldAPI.swift; sourceTree = "<group>"; };
 		3E7C321C21AA508A00ACC457 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		3E7C321E21AA517E00ACC457 /* VehicleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAPI.swift; sourceTree = "<group>"; };
+		3EA7880821AB0CF600B2BCF5 /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		3EA7880A21AB0D5000B2BCF5 /* StarshipAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipAPI.swift; sourceTree = "<group>"; };
 		3EF1E8F121A9C0C400EA5B5B /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		3EF1E8F221A9C0C400EA5B5B /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 		3EF1E8F321A9C0C400EA5B5B /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 				3EF1E90121A9E42F00EA5B5B /* Person.swift */,
 				3E7C321821AA461700ACC457 /* Homeworld.swift */,
 				3E7C321C21AA508A00ACC457 /* Vehicle.swift */,
+				3EA7880821AB0CF600B2BCF5 /* Starship.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -146,7 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				3EF1E90021A9CCBF00EA5B5B /* Storyboards */,
-				3EF1E90521AA3A1800EA5B5B /* Custom */,
+				3EF1E90521AA3A1800EA5B5B /* Custom UIKit */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				3EF1E8FE21A9CCA800EA5B5B /* PersonAPI.swift */,
 				3E7C321A21AA468000ACC457 /* HomeworldAPI.swift */,
 				3E7C321E21AA517E00ACC457 /* VehicleAPI.swift */,
+				3EA7880A21AB0D5000B2BCF5 /* StarshipAPI.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -199,13 +205,13 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
-		3EF1E90521AA3A1800EA5B5B /* Custom */ = {
+		3EF1E90521AA3A1800EA5B5B /* Custom UIKit */ = {
 			isa = PBXGroup;
 			children = (
 				3EF1E8F821A9C52600EA5B5B /* BlackBackgroundView.swift */,
 				3EF1E90321AA2B0700EA5B5B /* FadeButton.swift */,
 			);
-			name = Custom;
+			name = "Custom UIKit";
 			sourceTree = "<group>";
 		};
 		ECD59BE54C2B83009680009E /* Frameworks */ = {
@@ -346,8 +352,10 @@
 				3E7C321B21AA468000ACC457 /* HomeworldAPI.swift in Sources */,
 				3EF1E90421AA2B0700EA5B5B /* FadeButton.swift in Sources */,
 				3EF1E90B21AA3A4200EA5B5B /* StarshipsVC.swift in Sources */,
+				3EA7880B21AB0D5000B2BCF5 /* StarshipAPI.swift in Sources */,
 				3E7C321921AA461700ACC457 /* Homeworld.swift in Sources */,
 				3EF1E90921AA3A3800EA5B5B /* VehiclesVC.swift in Sources */,
+				3EA7880921AB0CF600B2BCF5 /* Starship.swift in Sources */,
 				3E13F39121A9119D00D5F3EE /* AppDelegate.swift in Sources */,
 				3EF1E8F921A9C52600EA5B5B /* BlackBackgroundView.swift in Sources */,
 				3E13F39E21A9121800D5F3EE /* SelectPersonVC.swift in Sources */,

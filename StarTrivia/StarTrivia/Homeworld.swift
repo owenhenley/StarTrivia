@@ -9,8 +9,8 @@
 import Foundation
 
 struct Homeworld: Codable {
-    let name: String
-    let climate: String
-    let terrain: String
-    let population: String
+    let name       : String
+    let climate    : String
+    let terrain    : String
+    let population : String
 }

@@ -23,7 +23,9 @@ class HomeworldVC: UIViewController, SelectPersonDelegate {
         super.viewDidLoad()
         api.getHomeWorld(url: person.homeworldUrl) { (homeworld) in
             if let homeworld = homeworld {
-                self.setupLabels(homeworld: homeworld)
+                DispatchQueue.main.async {
+                    self.setupLabels(homeworld: homeworld)
+                }
             }
         }
     }

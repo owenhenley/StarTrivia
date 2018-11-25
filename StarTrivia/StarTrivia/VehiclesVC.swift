@@ -24,9 +24,14 @@ class VehiclesVC: UIViewController, SelectPersonDelegate {
     @IBOutlet weak var nextButton        : UIButton!
     
     var person: Person!
+    let api = VehicleAPI()
+    var vehicles = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        vehicles = person.vehicleUrls
+        guard let firstVehicle = vehicles.first else { return }
+        getVehicle(url: firstVehicle)
     }
     
         // MARK: - Actions
@@ -39,4 +44,24 @@ class VehiclesVC: UIViewController, SelectPersonDelegate {
         
     }
 
+    func getVehicle(url: String) {
+        api.getVehicle(url: url) { (vehicle) in
+            if let vehicle = vehicle {
+                DispatchQueue.main.async {
+                    self.setupLabels(vehicle: vehicle)
+                }
+            }
+        }
+    }
+    
+    func setupLabels(vehicle: Vehicle) {
+        nameLabel.text = vehicle.name
+        modelLabel.text = vehicle.model
+        manufacturerLabel.text = vehicle.manufacturer
+        costLabel.text = vehicle.cost
+        lengthLabel.text = vehicle.length
+        speedLabel.text = vehicle.speed
+        crewLabel.text = vehicle.crew
+        passengerLabel.text = vehicle.passengers
+    }
 }

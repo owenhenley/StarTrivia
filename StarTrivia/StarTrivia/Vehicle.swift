@@ -8,13 +8,14 @@
 
 import Foundation
 
-struct Vehicle {
+struct Vehicle: Codable {
     let name: String
     let model: String
     let manufacturer: String
     let cost: String
     let length: String
     let speed: String
+    let crew: String
     let passengers: String
     
     enum CodingKeys: String, CodingKey {

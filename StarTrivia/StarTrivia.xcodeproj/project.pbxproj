@@ -15,6 +15,8 @@
 		3E13F39E21A9121800D5F3EE /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E13F39D21A9121800D5F3EE /* SelectPersonVC.swift */; };
 		3E7C321921AA461700ACC457 /* Homeworld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C321821AA461700ACC457 /* Homeworld.swift */; };
 		3E7C321B21AA468000ACC457 /* HomeworldAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C321A21AA468000ACC457 /* HomeworldAPI.swift */; };
+		3E7C321D21AA508A00ACC457 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C321C21AA508A00ACC457 /* Vehicle.swift */; };
+		3E7C321F21AA517E00ACC457 /* VehicleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C321E21AA517E00ACC457 /* VehicleAPI.swift */; };
 		3EF1E8F421A9C0DD00EA5B5B /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F121A9C0C400EA5B5B /* Starjedi.ttf */; };
 		3EF1E8F521A9C0E000EA5B5B /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F321A9C0C400EA5B5B /* Starjhol.ttf */; };
 		3EF1E8F621A9C0E400EA5B5B /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F221A9C0C400EA5B5B /* Starjout.ttf */; };
@@ -40,6 +42,8 @@
 		3E13F39D21A9121800D5F3EE /* SelectPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPersonVC.swift; sourceTree = "<group>"; };
 		3E7C321821AA461700ACC457 /* Homeworld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeworld.swift; sourceTree = "<group>"; };
 		3E7C321A21AA468000ACC457 /* HomeworldAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldAPI.swift; sourceTree = "<group>"; };
+		3E7C321C21AA508A00ACC457 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		3E7C321E21AA517E00ACC457 /* VehicleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAPI.swift; sourceTree = "<group>"; };
 		3EF1E8F121A9C0C400EA5B5B /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		3EF1E8F221A9C0C400EA5B5B /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 		3EF1E8F321A9C0C400EA5B5B /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 			children = (
 				3EF1E90121A9E42F00EA5B5B /* Person.swift */,
 				3E7C321821AA461700ACC457 /* Homeworld.swift */,
+				3E7C321C21AA508A00ACC457 /* Vehicle.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -120,17 +125,9 @@
 		3E13F38421A9119D00D5F3EE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3E13F38521A9119D00D5F3EE /* Model Controllers */,
 				3E13F38821A9119D00D5F3EE /* View Controllers */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		3E13F38521A9119D00D5F3EE /* Model Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Model Controllers";
 			sourceTree = "<group>";
 		};
 		3E13F38821A9119D00D5F3EE /* View Controllers */ = {
@@ -188,6 +185,7 @@
 			children = (
 				3EF1E8FE21A9CCA800EA5B5B /* PersonAPI.swift */,
 				3E7C321A21AA468000ACC457 /* HomeworldAPI.swift */,
+				3E7C321E21AA517E00ACC457 /* VehicleAPI.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -343,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E7C321F21AA517E00ACC457 /* VehicleAPI.swift in Sources */,
 				3EF1E90221A9E42F00EA5B5B /* Person.swift in Sources */,
 				3E7C321B21AA468000ACC457 /* HomeworldAPI.swift in Sources */,
 				3EF1E90421AA2B0700EA5B5B /* FadeButton.swift in Sources */,
@@ -355,6 +354,7 @@
 				3EF1E8FF21A9CCA800EA5B5B /* PersonAPI.swift in Sources */,
 				3EF1E90D21AA3A4B00EA5B5B /* FilmsVC.swift in Sources */,
 				3EF1E90721AA3A2A00EA5B5B /* HomeworldVC.swift in Sources */,
+				3E7C321D21AA508A00ACC457 /* Vehicle.swift in Sources */,
 				3EF1E8FC21A9C5A800EA5B5B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

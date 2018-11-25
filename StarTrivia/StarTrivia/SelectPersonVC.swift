@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol SelectPersonDelegate {
+    var person: Person! { get set }
+}
+
 class SelectPersonVC: UIViewController {
     
         // MARK: - Outlets
@@ -25,10 +29,13 @@ class SelectPersonVC: UIViewController {
         // MARK: - Propeerties
     
     let personAPI = PersonAPI()
+    var person: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+        // MARK: - Actions
     
     @IBAction func randomTapped(_ sender: Any) {
         
@@ -36,28 +43,86 @@ class SelectPersonVC: UIViewController {
         
         personAPI.getRandomPersonAlamofire(id: random) { (person) in
                 if let person = person {
-                    self.nameLabel.text = person.name
-                    self.heightLabel.text = person.height
-                    self.massLabel?.text = person.mass
-                    self.hairLabel.text = person.hair
-                    self.birthYearLabel.text = person.birthYear
-                    self.genderLabel.text = person.gender
+                    self.setupViews(person: person)
+                    self.person = person
             }
         }
     }
     
-    @IBAction func homeworldTapped(_ sender: Any) {
+    
+    func setupViews(person: Person) {
+        nameLabel.text = person.name
+        heightLabel.text = person.height
+        massLabel.text = person.mass
+        hairLabel.text = person.hair
+        birthYearLabel.text = person.birthYear
+        genderLabel.text = person.gender
+        
+        // Set button state
+        homeworldButton.isEnabled = !person.homeworldUrl.isEmpty
+        vehichlesButton.isEnabled = !person.vehicleUrls.isEmpty
+        starshipsButton.isEnabled = !person.starshipUrls.isEmpty
+        filmsButton.isEnabled = !person.filmUrls.isEmpty
     }
     
+        // MARK: - Navigation
     
-    @IBAction func vehiclesTapped(_ sender: Any) {
-    }
-    
-    
-    @IBAction func starshipsTapped(_ sender: Any) {
-    }
-    
-    
-    @IBAction func filmsTapped(_ sender: Any) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if var destination = segue.destination as? SelectPersonDelegate {
+            destination.person = person
+        }
+        
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        // enum Segue : String {
+        //     case homeworld = "homeworld"
+        //     case vehicles  = "vehicles"
+        //     case starships = "starships"
+        //     case films     = "films"
+        // }
+        //
+        // switch segue.identifier {
+        // case Segue.homeworld.rawValue:
+        //     if let destinationVC = segue.destination as? HomeworldVC {
+        //         destinationVC.person = person
+        //     }
+        // case Segue.vehicles.rawValue:
+        //     if let desinationVC = segue.destination as? VehiclesVC {
+        //         desinationVC.person = person
+        //     }
+        // case Segue.starships.rawValue:
+        //     if let desinationVC = segue.destination as? StarshipsVC {
+        //         desinationVC.person = person
+        //     }
+        // case Segue.films.rawValue:
+        //     if let desinationVC = segue.destination as? FilmsVC {
+        //         desinationVC.person = person
+        //     }
+        // default:
+        //     break
+        // }
+        
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        // if segue.identifier == "homeworld" {
+        //     if let destinationVC = segue.destination as? HomeworldVC {
+        //         destinationVC.person = person
+        //     }
+        // } else if segue.identifier == "vehicles" {
+        //     if let desinationVC = segue.destination as? VehiclesVC {
+        //         desinationVC.person = person
+        //     }
+        // } else if segue.identifier == "starships" {
+        //     if let desinationVC = segue.destination as? StarshipsVC {
+        //         desinationVC.person = person
+        //     }
+        // } else if segue.identifier == "films" {
+        //     if let desinationVC = segue.destination as? FilmsVC {
+        //         desinationVC.person = person
+        //     }
+        // }
     }
 }

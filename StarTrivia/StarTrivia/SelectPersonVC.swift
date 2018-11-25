@@ -15,16 +15,17 @@ protocol SelectPersonDelegate {
 class SelectPersonVC: UIViewController {
     
         // MARK: - Outlets
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var heightLabel: UILabel!
-    @IBOutlet weak var massLabel: UILabel!
-    @IBOutlet weak var hairLabel: UILabel!
-    @IBOutlet weak var birthYearLabel: UILabel!
-    @IBOutlet weak var genderLabel: UILabel!
-    @IBOutlet weak var homeworldButton: UIButton!
-    @IBOutlet weak var vehichlesButton: UIButton!
-    @IBOutlet weak var starshipsButton: UIButton!
-    @IBOutlet weak var filmsButton: UIButton!
+    @IBOutlet weak var nameLabel       : UILabel!
+    @IBOutlet weak var heightLabel     : UILabel!
+    @IBOutlet weak var massLabel       : UILabel!
+    @IBOutlet weak var hairLabel       : UILabel!
+    @IBOutlet weak var birthYearLabel  : UILabel!
+    @IBOutlet weak var genderLabel     : UILabel!
+    @IBOutlet weak var homeworldButton : UIButton!
+    @IBOutlet weak var vehichlesButton : UIButton!
+    @IBOutlet weak var starshipsButton : UIButton!
+    @IBOutlet weak var filmsButton     : UIButton!
+    @IBOutlet weak var activityMonitor : UIActivityIndicatorView!
     
         // MARK: - Propeerties
     
@@ -39,12 +40,14 @@ class SelectPersonVC: UIViewController {
     
     @IBAction func randomTapped(_ sender: Any) {
         
+        activityMonitor.startAnimating()
         let random = Int.random(in: 1...87)
         
         personAPI.getRandomPersonAlamofire(id: random) { (person) in
                 if let person = person {
                     self.setupViews(person: person)
                     self.person = person
+                    self.activityMonitor.stopAnimating()
             }
         }
     }

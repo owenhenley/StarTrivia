@@ -19,6 +19,8 @@
 		3E7C321F21AA517E00ACC457 /* VehicleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C321E21AA517E00ACC457 /* VehicleAPI.swift */; };
 		3EA7880921AB0CF600B2BCF5 /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA7880821AB0CF600B2BCF5 /* Starship.swift */; };
 		3EA7880B21AB0D5000B2BCF5 /* StarshipAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA7880A21AB0D5000B2BCF5 /* StarshipAPI.swift */; };
+		3EA7880D21AB16CC00B2BCF5 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA7880C21AB16CC00B2BCF5 /* Film.swift */; };
+		3EA7880F21AB179500B2BCF5 /* FilmAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA7880E21AB179500B2BCF5 /* FilmAPI.swift */; };
 		3EF1E8F421A9C0DD00EA5B5B /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F121A9C0C400EA5B5B /* Starjedi.ttf */; };
 		3EF1E8F521A9C0E000EA5B5B /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F321A9C0C400EA5B5B /* Starjhol.ttf */; };
 		3EF1E8F621A9C0E400EA5B5B /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F221A9C0C400EA5B5B /* Starjout.ttf */; };
@@ -48,6 +50,8 @@
 		3E7C321E21AA517E00ACC457 /* VehicleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAPI.swift; sourceTree = "<group>"; };
 		3EA7880821AB0CF600B2BCF5 /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
 		3EA7880A21AB0D5000B2BCF5 /* StarshipAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipAPI.swift; sourceTree = "<group>"; };
+		3EA7880C21AB16CC00B2BCF5 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		3EA7880E21AB179500B2BCF5 /* FilmAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmAPI.swift; sourceTree = "<group>"; };
 		3EF1E8F121A9C0C400EA5B5B /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		3EF1E8F221A9C0C400EA5B5B /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 		3EF1E8F321A9C0C400EA5B5B /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 				3E7C321821AA461700ACC457 /* Homeworld.swift */,
 				3E7C321C21AA508A00ACC457 /* Vehicle.swift */,
 				3EA7880821AB0CF600B2BCF5 /* Starship.swift */,
+				3EA7880C21AB16CC00B2BCF5 /* Film.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 				3E7C321A21AA468000ACC457 /* HomeworldAPI.swift */,
 				3E7C321E21AA517E00ACC457 /* VehicleAPI.swift */,
 				3EA7880A21AB0D5000B2BCF5 /* StarshipAPI.swift */,
+				3EA7880E21AB179500B2BCF5 /* FilmAPI.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 				3EF1E90B21AA3A4200EA5B5B /* StarshipsVC.swift in Sources */,
 				3EA7880B21AB0D5000B2BCF5 /* StarshipAPI.swift in Sources */,
 				3E7C321921AA461700ACC457 /* Homeworld.swift in Sources */,
+				3EA7880D21AB16CC00B2BCF5 /* Film.swift in Sources */,
 				3EF1E90921AA3A3800EA5B5B /* VehiclesVC.swift in Sources */,
 				3EA7880921AB0CF600B2BCF5 /* Starship.swift in Sources */,
 				3E13F39121A9119D00D5F3EE /* AppDelegate.swift in Sources */,
@@ -362,6 +369,7 @@
 				3EF1E8FF21A9CCA800EA5B5B /* PersonAPI.swift in Sources */,
 				3EF1E90D21AA3A4B00EA5B5B /* FilmsVC.swift in Sources */,
 				3EF1E90721AA3A2A00EA5B5B /* HomeworldVC.swift in Sources */,
+				3EA7880F21AB179500B2BCF5 /* FilmAPI.swift in Sources */,
 				3E7C321D21AA508A00ACC457 /* Vehicle.swift in Sources */,
 				3EF1E8FC21A9C5A800EA5B5B /* Constants.swift in Sources */,
 			);

@@ -22,6 +22,7 @@ class VehiclesVC: UIViewController, SelectPersonDelegate {
     @IBOutlet weak var passengerLabel    : UILabel!
     @IBOutlet weak var previousButton    : UIButton!
     @IBOutlet weak var nextButton        : UIButton!
+    @IBOutlet weak var activityMonitor   : UIActivityIndicatorView!
     
     var person: Person!
     let api = VehicleAPI()
@@ -51,10 +52,12 @@ class VehiclesVC: UIViewController, SelectPersonDelegate {
     }
 
     func getVehicle(url: String) {
+        activityMonitor.startAnimating()
         api.getVehicle(url: url) { (vehicle) in
             if let vehicle = vehicle {
                 DispatchQueue.main.async {
                     self.setupLabels(vehicle: vehicle)
+                    self.activityMonitor.stopAnimating()
                 }
             }
         }

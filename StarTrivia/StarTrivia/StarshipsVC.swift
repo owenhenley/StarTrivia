@@ -20,6 +20,7 @@ class StarshipsVC: UIViewController, SelectPersonDelegate {
     @IBOutlet weak var passengersLabel   : UILabel!
     @IBOutlet weak var previousButton    : FadeButton!
     @IBOutlet weak var nextButton        : FadeButton!
+    @IBOutlet weak var activityMonitor   : UIActivityIndicatorView!
     
     var person: Person!
     let api = StarshipAPI()
@@ -47,10 +48,12 @@ class StarshipsVC: UIViewController, SelectPersonDelegate {
     }
     
     func getStarship(url: String) {
+        activityMonitor.startAnimating()
         api.getStarship(url: url) { (starship) in
             if let starship = starship {
                 DispatchQueue.main.async {
                     self.setupLabels(starship: starship)
+                    self.activityMonitor.stopAnimating()
                 }
             }
         }

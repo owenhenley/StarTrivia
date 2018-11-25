@@ -11,20 +11,23 @@ import UIKit
 class HomeworldVC: UIViewController, SelectPersonDelegate {
     
     
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var climateLabel: UILabel!
-    @IBOutlet weak var terrainLabel: UILabel!
-    @IBOutlet weak var populationLabel: UILabel!
+    @IBOutlet weak var nameLabel       : UILabel!
+    @IBOutlet weak var climateLabel    : UILabel!
+    @IBOutlet weak var terrainLabel    : UILabel!
+    @IBOutlet weak var populationLabel : UILabel!
+    @IBOutlet weak var activityMonitor : UIActivityIndicatorView!
     
     var person: Person!
     let api = HomeworldAPI()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityMonitor.startAnimating()
         api.getHomeWorld(url: person.homeworldUrl) { (homeworld) in
             if let homeworld = homeworld {
                 DispatchQueue.main.async {
                     self.setupLabels(homeworld: homeworld)
+                    self.activityMonitor.stopAnimating()
                 }
             }
         }

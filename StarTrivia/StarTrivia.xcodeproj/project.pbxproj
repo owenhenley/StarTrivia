@@ -13,6 +13,8 @@
 		3E13F39321A9119E00D5F3EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E13F39221A9119E00D5F3EE /* Assets.xcassets */; };
 		3E13F39621A9119E00D5F3EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E13F39421A9119E00D5F3EE /* LaunchScreen.storyboard */; };
 		3E13F39E21A9121800D5F3EE /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E13F39D21A9121800D5F3EE /* SelectPersonVC.swift */; };
+		3E7C321921AA461700ACC457 /* Homeworld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C321821AA461700ACC457 /* Homeworld.swift */; };
+		3E7C321B21AA468000ACC457 /* HomeworldAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C321A21AA468000ACC457 /* HomeworldAPI.swift */; };
 		3EF1E8F421A9C0DD00EA5B5B /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F121A9C0C400EA5B5B /* Starjedi.ttf */; };
 		3EF1E8F521A9C0E000EA5B5B /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F321A9C0C400EA5B5B /* Starjhol.ttf */; };
 		3EF1E8F621A9C0E400EA5B5B /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1E8F221A9C0C400EA5B5B /* Starjout.ttf */; };
@@ -36,6 +38,8 @@
 		3E13F39521A9119E00D5F3EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E13F39721A9119E00D5F3EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E13F39D21A9121800D5F3EE /* SelectPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPersonVC.swift; sourceTree = "<group>"; };
+		3E7C321821AA461700ACC457 /* Homeworld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeworld.swift; sourceTree = "<group>"; };
+		3E7C321A21AA468000ACC457 /* HomeworldAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldAPI.swift; sourceTree = "<group>"; };
 		3EF1E8F121A9C0C400EA5B5B /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		3EF1E8F221A9C0C400EA5B5B /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 		3EF1E8F321A9C0C400EA5B5B /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				3EF1E90121A9E42F00EA5B5B /* Person.swift */,
+				3E7C321821AA461700ACC457 /* Homeworld.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				3EF1E8FE21A9CCA800EA5B5B /* PersonAPI.swift */,
+				3E7C321A21AA468000ACC457 /* HomeworldAPI.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -338,8 +344,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EF1E90221A9E42F00EA5B5B /* Person.swift in Sources */,
+				3E7C321B21AA468000ACC457 /* HomeworldAPI.swift in Sources */,
 				3EF1E90421AA2B0700EA5B5B /* FadeButton.swift in Sources */,
 				3EF1E90B21AA3A4200EA5B5B /* StarshipsVC.swift in Sources */,
+				3E7C321921AA461700ACC457 /* Homeworld.swift in Sources */,
 				3EF1E90921AA3A3800EA5B5B /* VehiclesVC.swift in Sources */,
 				3E13F39121A9119D00D5F3EE /* AppDelegate.swift in Sources */,
 				3EF1E8F921A9C52600EA5B5B /* BlackBackgroundView.swift in Sources */,

@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Alamofire
 
 let BLACK_BG   = UIColor.black.withAlphaComponent(0.5).cgColor
 let BASE_URL   = "https://swapi.co/api/"
 let PERSON_URL = BASE_URL + "people/"
 
 typealias PersonResponseCompletion = (Person?) -> Void
+typealias HomeworldResponseCompletion = (Homeworld?) -> Void

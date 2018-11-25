@@ -10,23 +10,33 @@ import UIKit
 
 class VehiclesVC: UIViewController, SelectPersonDelegate {
     
+        // MARK: - Outlets
+    
+    @IBOutlet weak var nameLabel         : UILabel!
+    @IBOutlet weak var modelLabel        : UILabel!
+    @IBOutlet weak var manufacturerLabel : UILabel!
+    @IBOutlet weak var costLabel         : UILabel!
+    @IBOutlet weak var lengthLabel       : UILabel!
+    @IBOutlet weak var speedLabel        : UILabel!
+    @IBOutlet weak var crewLabel         : UILabel!
+    @IBOutlet weak var passengerLabel    : UILabel!
+    @IBOutlet weak var previousButton    : UIButton!
+    @IBOutlet weak var nextButton        : UIButton!
+    
     var person: Person!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        // MARK: - Actions
+    
+    @IBAction func previousTapped(_ sender: Any) {
+        
     }
-    */
+    
+    @IBAction func nextTapped(_ sender: Any) {
+        
+    }
 
 }

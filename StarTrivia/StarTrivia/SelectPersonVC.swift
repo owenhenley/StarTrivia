@@ -17,6 +17,10 @@ class SelectPersonVC: UIViewController {
     @IBOutlet weak var hairLabel: UILabel!
     @IBOutlet weak var birthYearLabel: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
+    @IBOutlet weak var homeworldButton: UIButton!
+    @IBOutlet weak var vehichlesButton: UIButton!
+    @IBOutlet weak var starshipsButton: UIButton!
+    @IBOutlet weak var filmsButton: UIButton!
     
         // MARK: - Propeerties
     
@@ -40,5 +44,20 @@ class SelectPersonVC: UIViewController {
                     self.genderLabel.text = person.gender
             }
         }
+    }
+    
+    @IBAction func homeworldTapped(_ sender: Any) {
+    }
+    
+    
+    @IBAction func vehiclesTapped(_ sender: Any) {
+    }
+    
+    
+    @IBAction func starshipsTapped(_ sender: Any) {
+    }
+    
+    
+    @IBAction func filmsTapped(_ sender: Any) {
     }
 }
